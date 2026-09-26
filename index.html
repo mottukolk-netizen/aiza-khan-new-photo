@@ -35,6 +35,7 @@
     header p {
       color: #aaa;
       margin: 8px 0 0;
+      font-size: 14px;
     }
 
     .gallery {
@@ -49,21 +50,32 @@
       border-radius: 18px;
       padding: 10px;
       margin-bottom: 28px;
-      box-shadow: 0 8px 30px rgba(0,0,0,.35);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, .35);
     }
 
     .photo-card img {
       width: 100%;
+      height: auto;
       display: block;
       border-radius: 13px;
-      height: auto;
     }
 
-    /* Native Ad - Only One */
+    /* Advertisement Box */
     .ad-slot {
-      min-height: 90px;
-      margin: 14px 0 4px;
-      padding: 10px;
+      min-height: 70px;
+      margin-top: 14px;
+      border-radius: 12px;
+      background: #0d0f14;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Banner Ad */
+    .banner-slot {
+      min-height: 70px;
+      margin-top: 14px;
       border-radius: 12px;
       background: #0d0f14;
       display: flex;
@@ -74,137 +86,3 @@
 
     .see-more {
       display: block;
-      width: 90%;
-      max-width: 350px;
-      margin: 30px auto;
-      padding: 15px;
-      border: 0;
-      border-radius: 30px;
-      background: linear-gradient(135deg, #d4af62, #9d7430);
-      color: #08090d;
-      font-size: 17px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    #more-message {
-      text-align: center;
-      color: #aaa;
-      margin: 15px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 15px;
-      color: #777;
-      font-size: 13px;
-      border-top: 1px solid #222;
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <h1>Aiza Khan</h1>
-    <p>Latest & Beautiful Photo Gallery</p>
-  </header>
-
-  <main class="gallery">
-
-    <!-- PHOTO 1 + ONLY NATIVE AD -->
-    <div class="photo-card">
-      <img src="Photo1.png" alt="Aiza Khan Photo 1">
-
-      <div class="ad-slot">
-
-        <!-- Adsterra Native Banner -->
-        <script async="async"
-          data-cfasync="false"
-          src="https://pl31507201.profitableratecpmnetwork.com/6b56a85708c119906a097518346a07ca/invoke.js">
-        </script>
-
-        <div id="container-6b56a85708c119906a097518346a07ca"></div>
-
-      </div>
-    </div>
-
-
-    <!-- PHOTO 2 -->
-    <div class="photo-card">
-      <img src="Photo2.png" alt="Aiza Khan Photo 2">
-    </div>
-
-
-    <!-- PHOTO 3 -->
-    <div class="photo-card">
-      <img src="Photo3.png" alt="Aiza Khan Photo 3">
-    </div>
-
-
-    <!-- PHOTO 4 -->
-    <div class="photo-card">
-      <img src="Photo4.png" alt="Aiza Khan Photo 4">
-    </div>
-
-
-    <!-- PHOTO 5 -->
-    <div class="photo-card">
-      <img src="Photo5.png" alt="Aiza Khan Photo 5">
-    </div>
-
-
-    <!-- PHOTO 6 -->
-    <div class="photo-card">
-      <img src="Photo6.png" alt="Aiza Khan Photo 6">
-    </div>
-
-
-    <!-- PHOTO 7 -->
-    <div class="photo-card">
-      <img src="Photo7.png" alt="Aiza Khan Photo 7">
-    </div>
-
-
-    <!-- PHOTO 8 -->
-    <div class="photo-card">
-      <img src="Photo8.png" alt="Aiza Khan Photo 8">
-    </div>
-
-
-    <!-- PHOTO 9 -->
-    <div class="photo-card">
-      <img src="Photo9.png" alt="Aiza Khan Photo 9">
-    </div>
-
-
-    <!-- PHOTO 10 -->
-    <div class="photo-card">
-      <img src="Photo10.png" alt="Aiza Khan Photo 10">
-    </div>
-
-
-    <!-- SEE MORE -->
-    <button class="see-more" onclick="showMorePhotos()">
-      See More Photos
-    </button>
-
-    <div id="more-message"></div>
-
-  </main>
-
-
-  <footer>
-    © 2026 Aiza Khan Photo Gallery
-  </footer>
-
-
-  <script>
-    function showMorePhotos() {
-      document.getElementById("more-message").innerHTML =
-        "More photos will be added soon.";
-    }
-  </script>
-
-</body>
-</html>
